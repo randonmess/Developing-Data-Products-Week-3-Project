@@ -1,0 +1,21 @@
+# Scatterplot of mtcars dataset
+
+```{r, echo = F, message = FALSE}
+
+library(plotly)
+
+date <- Sys.Date()
+
+```
+
+The date of the assignment is `r date`.  
+The size of the point is determined by `wt`.  
+`0` and `1` represent whether the car has an automatic or manual transmission, respectively.
+
+```{r, echo = F, message = F, warning = F}
+
+plot_ly(mtcars, x = ~qsec, y = ~mpg, color = ~factor(am),
+        size = ~wt, type = 'scatter') %>%
+        layout(title = 'mpg vs qsec, weight, and transmission',
+               legend = list(title=list(text='<b> Transmission </b>')))
+```
