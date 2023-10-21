@@ -1,2 +1,2 @@
 # Developing-Data-Products-Week-3-Project
-R Markdown Presentation &amp; Plotly
+An interactive [Plotly scatterschart](https://randonmess.github.io/Developing-Data-Products-Course-Project/) of the `mtcars` dataset.
